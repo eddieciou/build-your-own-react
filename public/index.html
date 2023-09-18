@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build your own React</title>
+    <script src="../src/index.js"></script>
+</head>
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+</body>
+<script>
+
+  const element = createElement(
+    "div",
+    {style: "background: salmon",
+    },
+    createElement("h1", null, "Hello World!"),
+    createElement("h2", {style: "text-align:right"}, "from Didact")
+  )
+
+  const root = document.getElementById("root");
+  render(element, root);
+
+</script>
+</html>
